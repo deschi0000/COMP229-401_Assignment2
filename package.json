@@ -1,5 +1,5 @@
 {
-  "name": "comp229-assignment1",
+  "name": "comp229-assignment2",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -21,17 +21,17 @@
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
   },
-  "description": "Comp 229-Assignment1",
+  "description": "Comp 229-Assignment2",
   "main": "server.js",
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deschi0000/COMP229-401_Assignment1.git"
+    "url": "git+https://github.com/deschi0000/COMP229-401_Assignment2.git"
   },
   "author": "Dave von Deschwanden",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/deschi0000/COMP229-401_Assignment1/issues"
+    "url": "https://github.com/deschi0000/COMP229-401_Assignment2/issues"
   },
-  "homepage": "https://github.com/deschi0000/COMP229-401_Assignment1#readme"
+  "homepage": "https://github.com/deschi0000/COMP229-401_Assignment2#readme"
 }
