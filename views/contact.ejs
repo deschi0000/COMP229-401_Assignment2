@@ -1,0 +1,82 @@
+<!--Seperate View for Contact Page-->
+<!--Dave von Deschwanden - 301303220 - 05.2023-->
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+
+  <main class="container">
+    <div class="jumbotron">
+      <h1 class="display-4 text-center">Welcome to my <%= title %> page </h1>
+    </div>
+
+    <!-- My Contact Page -->
+        <div class="container contact-me">
+          <div class="row">
+            <div class="col-sm">
+              <div class="container contact-card border rounded">
+                
+                <ul>
+                  <li>
+                    LINKEDIN:<br>
+                    <a href="https://www.linkedin.com/in/dave-von-deschwanden-a54885179/">/dave-von-deschwanden</a>
+                  </li>
+                  <li>
+                    EMAIL:<br>
+                    <a href="mailto:davevond89@gmail.com">davevond89@gmail.com</a>
+                  </li>
+                  <li>
+                    PHONE#:<br>
+                    <a href="tel:+886987603281">+886987603281</a>
+                  </li>
+                  <li>
+                    LINEID:<br>
+                    <a href="">davevond89</a>
+                  </li>
+                  <li>
+                    GITHUB:<br>
+                    <a href="https://github.com/deschi0000" target="_blank">deschi0000</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm">
+              <form method="post" action="contact" class="needs-validation"> 
+                <div class="container contact">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="first-name" name="first" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="last-name" name="last" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="contact-email" placeholder="name@example.com" name="email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Add a message</label>
+                    <textarea class="form-control" id="contact-message" rows="3" name="message"></textarea>
+                  </div>
+                  <div class="row">
+                    <div class="col text-center">
+                      <button type="submit" class="btn btn-dark">Send!</button>
+                    </div>
+                  </div>
+                </div>
+              </form>              
+            </div>
+          </div>
+        </div>
+
+  </main>
+
+
+<%- include partials/bottom_nav.ejs %>
+
+<%- include partials/footer.ejs %>
+
+  
+
+ 

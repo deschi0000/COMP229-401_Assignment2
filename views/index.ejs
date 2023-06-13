@@ -1,0 +1,155 @@
+<!--Dave von Deschwanden - 301303220 - 05.2023-->
+<%- include partials/header.ejs %>
+
+  <%- include partials/main_nav.ejs %>
+
+    <% if (message=="Thank You" ) { %>
+      <div class="container">
+        <h3 class="thankyou text-center border">Thank you for your message!</h3>
+
+      </div>
+      <% } %>
+
+        <main class="container">
+          <div class="jumbotron">
+            <h1 class="display-4 text-center">Welcome to my <%= title %> page </h1>
+          </div>
+
+          <!-- My welcome Page -->
+          <% if (title=="Home" ) { %>
+            <div class="container">
+              <h3 class="mission-statement text-center border">
+                Hard-working. Dedicated. Adaptable. <br>
+                So many Synonyms for Dave.<br>
+                <a class="about-span" href="/about">Come find out more About me</a>
+              </h3>
+            </div>
+          <% } %>
+
+          <!-- My About Page -->
+          <% if (title=="About" ) { %>
+            <div class="container about-me">
+              <div class="row">
+                <div class="col-sm">
+                  <img src="./Assets/images/headshot.jpg" class="img-fluid mx-auto d-block" alt="Responsive image">
+
+                </div>
+                <div class="col-sm">
+                  I was born in Switzerland, spent most of my formative years in rural Ontario and have passed the
+                  last number of years exploring all the wonderful things Taiwan has to offer. 
+                  <br/><br/>
+                  Currently, I am slowly undergoing a career shift from the Food Industry, to transition into
+                  Software Engineering. I have always been an avid lover of science and technology and am finally
+                  taking the steps to realize the dreams of someone who spent lunch in his High School Programming
+                  club.
+                  <br/><br/>
+                  Aside from spending most of my time in front of a Computer, I still love to cook and bake.
+                  Enjoying hiking, running, photography and digital art/3D modelling.<br/>
+                  <br/><br/>
+                  Hopefully, like in the kitchen industry, I hope to connect and find many like-minded, hardworking
+                  and passionate people that really want to do some cool things in this world.<br/>
+                  <br/><br/>
+                  Please take your time to check out my <a href="./Assets/images/resume2023.pdf" target="_blank" class="resume-link">
+                    Resume</a>. Looking foward to connecting!<br/>
+                </div>
+              </div>
+            </div>
+          <% } %>
+
+
+
+          <% if (title=="Products" ) { %>
+          <!-- My Products Page -->
+          <h3 class="text-center product-service-header">
+            Some stuff I've built:
+          </h3>
+          <div class="container products-container">
+            <div class="row">
+              <div class="col">
+                <img src="./Assets/images/unityproduct.jpg" class="rounded mx-auto d-block   shadow p-3 mb-5 bg-white rounded   img-product" alt="...">
+                <p class="text-center products-text">
+                  <u>Unity Game</u><br>
+                  Role: Programmer<br><br>
+                  Made a small interactice game using the Unity Engine and C#
+                </p>
+              </div>
+              <div class="col">
+                <img src="./Assets/images/auctionproduct.jpg" class="rounded mx-auto d-block   shadow p-3 mb-5 bg-white rounded   img-product" alt="...">
+                <p class="text-center products-text">
+                  <u>E-Commerce Site</u><br>
+                  Role: Programmer<br><br>
+                  Created a small, interactive commerce-like web application for cs50's free Introduction Programming course
+                </p>              
+              </div>
+              
+              <div class="col">
+                <img src="./Assets/images/tamagotchiproduct.jpg" class="rounded mx-auto d-block shadow p-3 mb-5 bg-white rounded   img-product" alt="...">
+                <p class="text-center products-text">
+                  <u>CLI Tamagotchu</u><br>
+                  Role: Programmer<br><br>
+                  Programmed an interactive Japanese-esque game over a weekend for a Coding Club Challenge
+                </p>
+              </div>
+            </div>            
+          </div>
+
+          <!-- Github link -->
+          <div class="container">
+            <h5 class="mission-statement text-center border github-link">
+              <a class="about-span" href="https://github.com/deschi0000" target="_blank">Check out more at my Github</a>
+            </h5>
+          </div>
+
+          <% } %>
+
+          <!-- My Services Page -->
+          <% if (title=="Services" ) { %>
+          <h3 class="text-center product-service-header">
+            What I offer:
+          </h3>
+          <ul class="list-group list-group-flush services-container">
+            <li class="list-group-item service-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm" >
+                    <i>General Programming in:</i><br><br> Python, Javascript, C#, Java
+                  </div>
+                  <div class="col-sm">
+                    <img class="img-service-right" src="./Assets/images/pythonlogo.png"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item service-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <img class="img-service-left" src="./Assets/images/djangologo.png"/>
+                  </div>
+                  <div class="col-sm" style="text-align: right;">
+                    <i>Web Development in:</i><br><br> Flask and Django
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item service-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm" >
+                    <i>Game Development in:</i><br><br> Unity Engine
+                  </div>
+                  <div class="col-sm">
+                    <img class="img-service-right" src="./Assets/images/unitylogo.png"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <% } %>
+        </main>
+
+
+        <%- include partials/bottom_nav.ejs %>
+
+          <%- include partials/footer.ejs %>

@@ -1,0 +1,198 @@
+/* CSS Styling for Website */
+/*Dave von Deschwanden - 301303220 - 05.2023*/
+
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300&display=swap');
+/* 
+NB:
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'DM Mono', monospace; 
+*/
+
+
+/* MAIN PAGE  */
+.display-4{
+  padding-top: 3.5rem;
+}
+
+.mission-statement {
+  /* color: red; */
+  padding: 2rem;
+  max-width: 50rem;
+  margin: auto;
+  margin-top: 3rem;
+  font-family: 'DM Mono', monospace;
+  line-height: 3rem;
+}
+
+.thankyou{
+  padding: 1rem;
+  max-width: 50rem;
+  margin: auto;
+  margin-top: 3rem;
+  font-family: 'DM Mono', monospace;
+}
+
+h1, h3{
+  opacity: 0;
+}
+
+
+.logo {
+  max-width: 3rem;
+  margin: 0 1rem;
+}
+
+.about-span{
+  display:block;
+  color: inherit;
+  text-decoration: none;
+  transition: 500ms;
+}
+.about-span:hover {
+  cursor: pointer;
+  font-size: 110%;
+  transition: 800ms;
+  text-decoration: underline;
+}
+
+/* ABOUT PAGE  */
+.about-me {
+  margin-top: 3rem;
+  opacity: 0;
+  font-family: 'DM Mono', monospace;
+  margin-bottom: 15rem;
+}
+
+img {
+  width: 400px;
+}
+
+.resume-link{
+  transition: 500ms;
+}
+
+.resume-link:hover{
+  background-color: rgba(0,0,0,0.05);
+}
+
+
+/* PRODUCTS PAGE  */
+.img-product {
+  width: 350px;
+  height: 350px;
+}
+
+.products-container{
+  margin: 5rem auto;
+  font-family: 'DM Mono', monospace;
+  opacity: 0;
+  font-size: larger;
+  opacity: 0;
+}
+.products-text{
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.github-link{
+  margin-bottom: 12rem;
+}
+
+
+
+/* SERVICES PAGE  */
+.services-container{
+  max-width: 45rem;
+  margin: 5rem auto;
+  font-family: 'DM Mono', monospace;
+  opacity: 0;
+  font-size: larger;
+}
+
+.service-item {
+  margin: 2rem 0;
+}
+
+.img-service-right {
+  width: 200px;
+  float: right;
+  margin-bottom: 2rem;
+}
+
+.img-service-left {
+  width: 200px;
+  float: left;
+  margin-bottom: 3rem;
+}
+
+.product-service-header {
+  font-family: 'DM Mono', monospace;
+  margin-top: 2rem;
+}
+
+/* Fix issues with phone sizing / alignment */
+@media screen and (max-width: 500px){
+  .img-service-right,
+  .img-service-left
+   {
+      float: none;
+      display: block;
+      text-align: center;
+      margin: 1rem auto;
+  }
+  .services-container {
+    margin-top: 1rem;
+  }
+  .col-sm {
+    text-align: center;
+  }
+}
+
+
+
+/* CONTACT PAGE  */
+.container .contact {
+  margin-top: 2.5rem;
+  position: relative;
+} 
+
+.mb-3 {  
+  max-width: 50rem;
+  margin: auto;
+}
+
+.btn .btn-dark{
+  float: right;
+}
+
+.contact-me {
+  margin-top: 3rem;
+  opacity: 0;
+  font-family: 'DM Mono', monospace;
+  margin-bottom: 15rem;
+}
+
+.contact-card {
+  padding: 2rem;
+  max-width: 80%;
+  margin-top: 2rem;
+  font-size: medium;
+}
+
+ul{
+  overflow:auto;
+}
+
+li {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 500px){
+  li {
+    margin: 0.5rem auto;
+    list-style-type: none; 
+  }
+}
