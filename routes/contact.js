@@ -9,7 +9,12 @@ let Contact = require('../modules/contact');
 router.get('/', async (req, res, next) => {
     try {
         let contactList = await Contact.find();
-        console.log(contactList);
+        // console.log(contactList);
+
+        res.render('contactlist', {
+            title: 'Contacts',
+            ContactList: contactList
+        });
     } catch (err){
         console.log(err);
     }
