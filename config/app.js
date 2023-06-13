@@ -10,6 +10,7 @@ let DB = require('./db');
 
 let indexRouter = require('../routes/index');
 let usersRouter = require('../routes/users'); 
+let contactRouter = require('../routes/contact');
 
 // Point mongoose to the DB URI
 mongoose.connect(DB.URI);
@@ -36,6 +37,7 @@ app.use(express.static(path.join(__dirname, '../node_modules')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/contact-list', contactRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
