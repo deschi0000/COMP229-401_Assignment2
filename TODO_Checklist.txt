@@ -6,3 +6,11 @@ i)   Copy assingment 1, rename and start git repo
 ii)  Initialize the Business Contacts Mongo DB locally
 iii) Restructure the site
 iv)  Add authentication / Passport, Login, etc...  
+
+
+WHEN SUBMITTING:
+
+- zip archive of websites project files
+- link to github
+- link to live site on cloud host
+- YT video link!
