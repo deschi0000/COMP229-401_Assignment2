@@ -3,7 +3,7 @@ let router = express.Router();
 let mongoose = require('mongoose');
 
 // Connect to our game model
-let Contact = require('../modules/contact');
+let Contact = require('../models/contact');
 
 // Get Route for the Game List page
 router.get('/', async (req, res, next) => {
