@@ -7,8 +7,19 @@
     function Start() 
     {
         console.log("App Started...");
-    }
 
+        
+        // Check delete button
+        let deleteButtons = document.querySelectorAll(".btn-danger");
+        for (button of deleteButtons) {
+            button.addEventListener("click", (event) => {
+                if (!confirm("Are you sure?")) {
+                    event.preventDefault();
+                    window.location.assign('/contact-list');
+                }
+            });
+        }
+    }
     window.addEventListener("load", Start);
 
 })();
@@ -54,6 +65,6 @@ $(() => {
     $(".contact-list-container").animate({
         opacity: 1
     }, 1000)
-    
+
     
 })
