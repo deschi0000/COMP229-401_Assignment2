@@ -3,12 +3,57 @@
 
 <%- include ../partials/main_nav.ejs %>
 
+<!-- Content for the edit page -->
 
-
-
-
-
-
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1 class="display-4 text-center"><%= title %></h1>
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <label for="firstnameTextField">First Name</label>
+                    <input type="text" class="form-control"
+                    id="firstnameTextField"
+                    placeholder="Enter First Name" 
+                    name="firstname" 
+                    value="<%= contact.firstname %>" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastnameTextField">Last Name</label>
+                    <input type="text" class="form-control"
+                    id="lastnameTextField"
+                    placeholder="Enter Last Name" 
+                    name="lastname" 
+                    value="<%= contact.lastname %>" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactnumberTextField">Phone Number</label>
+                    <input type="text" class="form-control"
+                    id="contactnumberTextField"
+                    placeholder="Enter Phone Number" 
+                    maxlength="10"
+                    pattern="^[0-9]{10}$"
+                    name="contactnumber" 
+                    value="<%= contact.contactnumber %>" required>
+                </div>
+                <div class="form-group">
+                    <label for="emailTextField">First Name</label>
+                    <input type="email" class="form-control"
+                    id="emailTextField"
+                    placeholder="Enter Email Address" 
+                    name="email" 
+                    value="<%= contact.email %>" required>
+                </div>
+                <br>
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> Submit</button>
+                <a href="/contact-list" class="btn btn-warning">
+                    <i class="fas fa-undo"></i> Cancel
+                </a>
+            </form>
+        </div>
+    </div>
+</div>
 
 <%- include ../partials/bottom_nav.ejs %>
 
