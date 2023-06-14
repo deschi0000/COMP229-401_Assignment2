@@ -50,5 +50,10 @@ $(() => {
     $(".thankyou").show(1000)
     .slideUp(1500);
     
+    //Contact List
+    $(".contact-list-container").animate({
+        opacity: 1
+    }, 1000)
+    
     
 })
