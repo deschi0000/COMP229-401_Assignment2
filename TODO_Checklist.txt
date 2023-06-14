@@ -2,8 +2,8 @@ COMP 229 - WEBDEV
 ASSIGNMENT 2
 ===================
 
-i)   Copy assingment 1, rename and start git repo
-ii)  Initialize the Business Contacts Mongo DB locally
+i)   Copy assingment 1, rename and start git repo <<<<
+ii)  Initialize the Business Contacts Mongo DB locally <<<<<
 iii) Restructure the site
 iv)  Add authentication / Passport, Login, etc...  
 
