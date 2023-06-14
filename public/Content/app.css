@@ -12,7 +12,7 @@ font-family: 'DM Mono', monospace;
 
 /* MAIN PAGE  */
 .display-4{
-  padding-top: 3.5rem;
+  padding-top: 1.5rem;
 }
 
 .mission-statement {
@@ -195,4 +195,15 @@ li {
     margin: 0.5rem auto;
     list-style-type: none; 
   }
+}
+
+
+/* CONTACT LIST PAGES  */
+
+.contact-list-container{
+  opacity: 0;
+}
+
+.add-button {
+  margin: 1rem 0;
 }
