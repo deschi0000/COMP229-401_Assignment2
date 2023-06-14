@@ -23,7 +23,7 @@ router.get('/', async (req, res, next) => {
 // Get Route for the Add Page  --  CREATE OPERATION
 router.get('/add', async (req, res, next) => {
     try {
-        res.render('contacts/add', {title: 'Contacts'});
+        res.render('contacts/add', {title: 'Add a Contact'});
     } catch (err){
         console.log(err);
     }
