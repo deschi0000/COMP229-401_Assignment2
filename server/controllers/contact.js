@@ -8,7 +8,9 @@ let Contact = require('../models/contact');
 // Get Route for the Game List page --  READ OPERATION
 module.exports.displayContactList = async (req, res, next) => {
     try {
-        let contactList = await Contact.find();
+        
+        let contactList = await Contact.find().sort({lastname: 1}); // sort in alphabetical order by last name
+        // let contactList = await Contact.find();
         // console.log(contactList);
 
         res.render('contacts/list', {
