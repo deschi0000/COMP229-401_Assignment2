@@ -199,11 +199,11 @@ li {
 
 
 /* CONTACT LIST PAGES  */
-
-.contact-list-container{
-  opacity: 0;
-}
-
 .add-button {
   margin: 1rem 0;
+}
+
+/* REGISTER / LOGIN */
+.form-group {
+  padding: 0.5rem 0;
 }
