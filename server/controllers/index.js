@@ -15,30 +15,34 @@ module.exports.displayHomePage = (req, res, next) => {
         let param1 = req.query.param1;
         console.log(param1);
 
-        res.render('index', { title: 'Home', message: 'Thank You'});
+        res.render('indexmsg', { 
+            title: 'Home', 
+            message: 'Thank You', 
+            displayName: req.user ? req.user.displayName : ''
+        });
 
     }
-    res.render('index', { title: 'Home', message: ""});
+    res.render('index', { title: 'Home', displayName: req.user ? req.user.displayName : ''});
 }
 
 /* GET About Us page. */
 module.exports.displayAboutPage = (req, res, next) => {
-    res.render('index', { title: 'About', message: ""});
+    res.render('index', { title: 'About', displayName: req.user ? req.user.displayName : ''});
 }
 
 /* GET Products page. */
 module.exports.displayProductsPage = (req, res, next) => {
-    res.render('index', { title: 'Products', message: ""});
+    res.render('index', { title: 'Products', displayName: req.user ? req.user.displayName : ''});
 }
 
 /* GET Services page. */
 module.exports.displayServicesPage = (req, res, next) => {
-    res.render('index', { title: 'Services', message: ""});
+    res.render('index', { title: 'Services', displayName: req.user ? req.user.displayName : ''});
 }
 
 /* GET Contact Us page. */
 module.exports.displayContactUsPage = (req, res, next) => {
-    res.render('contact', { title: 'Contact', message: ""});
+    res.render('contact', { title: 'Contact', displayName: req.user ? req.user.displayName : ''});
 }
 
 /* POST Contact Us page. */
@@ -124,7 +128,7 @@ module.exports.processRegisterPage = (req, res, next) => {
         displayName: req.body.displayName
     });
 
-    User.register(newUser, req.body.passport, (err) => {
+    User.register(newUser, req.body.password, (err) => {
         if (err) {
             console.log(err);
             if (err.name == 'UserExistsError') {

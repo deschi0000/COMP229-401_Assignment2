@@ -15,7 +15,8 @@ module.exports.displayContactList = async (req, res, next) => {
 
         res.render('contacts/list', {
             title: 'Contacts',
-            ContactList: contactList
+            ContactList: contactList,
+            displayName: req.user ? req.user.displayName : ''
         });
     } catch (err){
         console.log(err);
@@ -25,7 +26,10 @@ module.exports.displayContactList = async (req, res, next) => {
 // Get Route for the Add Page  --  CREATE OPERATION
 module.exports.displayAddPage = async (req, res, next) => {
     try {
-        res.render('contacts/add', {title: 'Add a Contact'});
+        res.render('contacts/add', {
+            title: 'Add a Contact',
+            displayName: req.user ? req.user.displayName : ''
+        });
     } catch (err){
         console.log(err);
     }
@@ -57,7 +61,11 @@ module.exports.displayEditPage = async (req, res, next) => {
 
     try {
         let contactToEdit = await Contact.findById(id);
-        res.render('contacts/edit', {title: 'Edit Contact', contact: contactToEdit});
+        res.render('contacts/edit', {
+            title: 'Edit Contact', 
+            contact: contactToEdit,
+            displayName: req.user ? req.user.displayName : ''
+        });
     } catch(err) {
         console.log(err);
         res.status(500).send(err);
