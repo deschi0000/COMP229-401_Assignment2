@@ -1,6 +1,6 @@
 // IIFE -- Immediately Invoked Function Expression
 // Scripts file for Frontend
-// Dave von Deschwanden - 301303220 - 06.2023
+// Dave von Deschwanden - 301303220 - 16.06.2023
 
 (function(){
 
